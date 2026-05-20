@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # SCSC - Sistema de Controle de Solicitações Corporativas
 
 ## Descrição
@@ -105,3 +106,6 @@ DB_PORT=3306
 DB_USER=root
 DB_PASS=sua_senha
 DB_NAME=projetoIntegrador
+=======
+# projeto-integrador-I
+>>>>>>> ec1bb17bc92a72fc9afae5536321bf185ecc35aa
