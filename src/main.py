@@ -1,13 +1,13 @@
 from services import *
 
+while True:
 
-usuario = login()
+    usuario = login()
 
-if usuario is None:
+    if usuario is None:
 
-    print("\nUsuário não encontrado")
-
-else:
+        print("\nUsuário não encontrado")
+        continue
 
     print("\n" + "=" * 40)
     print("SCSC".center(40))
@@ -18,7 +18,6 @@ else:
     )
 
     while True:
-
         print("\n===== MENU =====")
 
         # =================================
@@ -42,6 +41,8 @@ else:
             print("3 - Listar solicitações")
             print("4 - Atribuir técnico")
             print("5 - Estatísticas")
+            print("6 - Deletar usuário")
+            print("7 - Deletar chamado")
             print("0 - Sair")
 
         # =================================
@@ -99,6 +100,12 @@ else:
                 case "5":
                     estatisticas()
 
+                case "6":
+                    deletar_usuario()
+
+                case "7":
+                    deletar_solicitacao()
+
                 case "0":
                     break
 
@@ -124,3 +131,4 @@ else:
 
                 case _:
                     print("\nOpção inválida")
+
