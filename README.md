@@ -19,8 +19,8 @@ O sistema permite:
 
 # Tecnologias utilizadas
 
-- Python 3
-- MySQL
+- Python 3.13
+- MySQL Workbench 8.0 CE
 - mysql-connector-python
 - python-dotenv
 
@@ -29,14 +29,23 @@ O sistema permite:
 # Estrutura do projeto
 
 SCSC/
+
 │
+
 ├── main.py
+
 ├── services.py
+
 ├── database.py
+
 ├── banco.sql
+
 ├── .env
+
 ├── .gitignore
+
 ├── requirements.txt
+
 └── README.md
 
 ---
@@ -63,9 +72,13 @@ python -m venv venv
 
 venv\Scripts\activate
 
-### Linux/Mac
+---
 
-source venv/bin/activate
+## 3.5. Em caso de erro ao ativar, usar o código
+
+### Windows
+
+Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy RemoteSigned
 
 ---
 
@@ -77,11 +90,11 @@ pip install -r requirements.txt
 
 # Configuração do banco
 
-## 1. Abra o MySQL Workbench
+## 1. Abra o MySQL Workbench 8.0 CE
 
 Execute o arquivo:
 
-banco.sql
+schema.sql
 
 Isso criará:
 - banco de dados
@@ -107,5 +120,3 @@ DB_USER=root
 DB_PASS=sua_senha
 DB_NAME=projetoIntegrador
 =======
-# projeto-integrador-I
->>>>>>> ec1bb17bc92a72fc9afae5536321bf185ecc35aa
