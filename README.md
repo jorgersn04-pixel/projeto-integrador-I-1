@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # SCSC - Sistema de Controle de Solicitações Corporativas
 
 ## Descrição
